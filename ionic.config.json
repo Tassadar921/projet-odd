@@ -1,0 +1,7 @@
+{
+  "name": "odd",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
