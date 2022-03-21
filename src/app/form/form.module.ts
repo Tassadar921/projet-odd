@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
-import { HomePage } from './home.page';
 
-import { HomePageRoutingModule } from './home-routing.module';
+import { IonicModule } from '@ionic/angular';
+
+import { FormPageRoutingModule } from './form-routing.module';
+
+import { FormPage } from './form.page';
 
 import {MenuComponent} from '../components/menu/menu.component';
 
@@ -13,8 +15,8 @@ import {MenuComponent} from '../components/menu/menu.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    FormPageRoutingModule
   ],
-  declarations: [HomePage, MenuComponent]
+  declarations: [FormPage, MenuComponent]
 })
-export class HomePageModule {}
+export class FormPageModule {}

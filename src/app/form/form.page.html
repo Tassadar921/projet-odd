@@ -1,0 +1,111 @@
+<app-menu></app-menu>
+
+<ion-progress-bar slot="fixed" type="indeterminate" *ngIf="submitting"></ion-progress-bar>
+<ion-progress-bar slot="fixed" *ngIf="!submitting"></ion-progress-bar>
+
+<ion-content>
+<ion-grid style="text-align:center;">
+
+  <ion-title>Formulaire</ion-title>
+  <ion-note>Aucune réponse n'est obligatoire, vous pouvez ne répondre qu'aux questions souhaitées</ion-note>
+
+  <ion-row style="border:1px solid white; margin:20px;"></ion-row>
+  <ion-title style="text-align:center;">Concernant le site</ion-title>
+
+  <ion-row>
+    <ion-col>
+      <ion-item color="none" shape="round">
+        <ion-label color="secondary" position="floating">Ce site vous a-t-il été utile ? Si oui ou non, pourquoi ?</ion-label>
+        <ion-input clearInput="true" color="secondary" placeholder="Utilité" type="text" style="height:100px;"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item color="none" shape="round">
+        <ion-label color="secondary" position="floating">Avis général sur le site</ion-label>
+        <ion-input clearInput="true" color="secondary" placeholder="Avis" type="text" style="height:100px;"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item color="none" shape="round">
+        <ion-label color="secondary" position="floating">Des sections à rajouter selon vous ?</ion-label>
+        <ion-input clearInput="true" color="secondary" placeholder="Ajouts" type="text" style="height:100px;"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item color="none" shape="round">
+        <ion-label color="secondary" position="floating">Pistes d'amélioration</ion-label>
+        <ion-input clearInput="true" color="secondary" placeholder="Améliorations" type="text" style="height:100px;"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row style="border:1px solid white; margin:20px;"></ion-row>
+  <ion-title style="text-align:center;">Concernant les énergies</ion-title>
+  <ion-note>Préciser dans la réponse si vous soumettez la réponse avant ou après lecture du site</ion-note>
+
+  <ion-row>
+    <ion-col>
+      <ion-item color="none" shape="round">
+        <ion-label color="secondary" position="floating">Avis sur le nucléaire</ion-label>
+        <ion-input clearInput="true" color="secondary" placeholder="Avis nucléaire" type="text" style="height:100px;"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item color="none" shape="round">
+        <ion-label color="secondary" position="floating">Avis sur l'hydrolique</ion-label>
+        <ion-input clearInput="true" color="secondary" placeholder="Avis hydrolique" type="text" style="height:100px;"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item color="none" shape="round">
+        <ion-label color="secondary" position="floating">Avis sur l'éolien</ion-label>
+        <ion-input clearInput="true" color="secondary" placeholder="Avis éolien" type="text" style="height:100px;"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item color="none" shape="round">
+        <ion-label color="secondary" position="floating">Avis sur le solaire</ion-label>
+        <ion-input clearInput="true" color="secondary" placeholder="Avis solaire" type="text" style="height:100px;"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item color="none" shape="round">
+        <ion-label color="secondary" position="floating">Avis sur la géothermie</ion-label>
+        <ion-input clearInput="true" color="secondary" placeholder="Avis géothermie" type="text" style="height:100px;"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-item color="none" shape="round">
+        <ion-label color="secondary" position="floating">Avis sur la biomasse</ion-label>
+        <ion-input clearInput="true" color="secondary" placeholder="Avis biomasse" type="text" style="height:100px;"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-button shape="round" color="secondary" (click)="submit()">Envoyer</ion-button>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col>
+      <ion-note>{{output}}</ion-note>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

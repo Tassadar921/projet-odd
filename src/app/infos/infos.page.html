@@ -1,0 +1,370 @@
+<app-menu></app-menu>
+
+<ion-content>
+  <ion-grid>
+    <ion-list>
+      <ion-list-header>
+        <ion-title style="text-align:center;">
+          Quelques exemples de sources d'énergie
+        </ion-title>
+      </ion-list-header>
+      <ion-row>
+
+        <ion-card>
+          <ion-title style="text-align:center;">Sources d'énergie primaires</ion-title>
+
+          <ion-item button="true" id="def_primary" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="book" class="icon_left"></ion-icon>
+            <p>Définition</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+
+          <ion-item button="true" id="exemple_primary" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="battery-half" class="icon_left"></ion-icon>
+            <p>Exemples</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+
+        <ion-col></ion-col>
+        <ion-card>
+
+          <ion-title style="text-align:center;">Sources d'énergie secondaires</ion-title>
+
+          <ion-item button="true" id="def_secondary" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="book" class="icon_left"></ion-icon>
+            <p>Définition</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+
+          <ion-item button="true" id="exemple_secondary" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="battery-half" class="icon_left"></ion-icon>
+            <p>Exemples</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+      </ion-row>
+
+      <ion-row>
+
+        <ion-card>
+          <ion-title>Energies renouvelables</ion-title>
+          <ion-item button="true" id="renouvelables" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="book" class="icon_left"></ion-icon>
+            <p>Kékécé ?</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+
+        <ion-col></ion-col>
+
+        <ion-card>
+          <ion-title>Energies fossiles</ion-title>
+          <ion-item button="true" id="fossiles" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="book" class="icon_left"></ion-icon>
+            <p>C'est quoiiii ?</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+      </ion-row>
+      <ion-row style="border: 1px white solid; margin:10px;"></ion-row>
+      <ion-row>
+        <ion-title style="text-align:center;">Focus sur ...</ion-title>
+      </ion-row>
+      <ion-row>
+        <ion-card>
+          <ion-title>... le nucléaire</ion-title>
+          <ion-item button="true" id="def_nucleaire" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="book" class="icon_left"></ion-icon>
+            <p>Connais pô</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+          <ion-item button="true" id="fonctionnement_nucleaire" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="build" class="icon_left"></ion-icon>
+            <p>Schema fonctionnement</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+      </ion-row>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-card>
+          <ion-title>... l'hydrolique</ion-title>
+          <ion-item button="true" id="def_hydro" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="book" class="icon_left"></ion-icon>
+            <p>Comment qu'ça marche ?</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+          <ion-item button="true" id="fonctionnement_hydro" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="build" class="icon_left"></ion-icon>
+            <p>Schema fonctionnement</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+      </ion-row>
+      <ion-row>
+        <ion-card>
+          <ion-title>... l'éolien</ion-title>
+          <ion-item button="true" id="def_eolien" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="book" class="icon_left"></ion-icon>
+            <p>C'est quoi ?</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+          <ion-item button="true" id="fonctionnement_eolien" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="build" class="icon_left"></ion-icon>
+            <p>Schema fonctionnement</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+      </ion-row>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-card>
+          <ion-title>... le solaire</ion-title>
+          <ion-item button="true" id="def_solaire" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="book" class="icon_left"></ion-icon>
+            <p>En apprendre davantage</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+          <ion-item button="true" id="fonctionnement_solaire" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="build" class="icon_left"></ion-icon>
+            <p>Schema fonctionnement</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+      </ion-row>
+      <ion-row>
+        <ion-card>
+          <ion-title>... la géothermie</ion-title>
+          <ion-item button="true" id="def_geothermie" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="book" class="icon_left"></ion-icon>
+            <p>Voir plus</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+          <ion-item button="true" id="fonctionnement_geothermie" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="build" class="icon_left"></ion-icon>
+            <p>Schema fonctionnement</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+      </ion-row>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-card>
+          <ion-title>... la biomasse</ion-title>
+          <ion-item button="true" id="def_biomasse" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="book" class="icon_left"></ion-icon>
+            <p>A quoi ça correspond ?</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+          <ion-item button="true" id="fonctionnement_biomasse" color="light" style="width:400px;">
+            <ion-icon color="secondary" name="build" class="icon_left"></ion-icon>
+            <p>Schema fonctionnement</p>
+            <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+          </ion-item>
+        </ion-card>
+      </ion-row>
+    </ion-list>
+  </ion-grid>
+</ion-content>
+
+<ion-modal trigger="def_primary">
+  <ng-template>
+    <p style="text-align:center; margin:20px;">Par définition,
+      <br>une source d'énergie primaire est issue de la nature avant d'être transformé.
+      <br>En cas de non-utilisation de la source primaire dans son état initial,
+      <br>elle est exploitée afin de la transformer en une source d'énergie secondaire utilisable et transportable.
+    </p>
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="exemple_primary">
+  <ng-template>
+    <p>
+      Voici la liste des sources d'énergie primaires : <br><br>
+      • Uranium<br>
+      • Charbon<br>
+      • Hydrocarbures<br>
+      • Cours d'eau et chutes d'eau<br>
+      • Force de la mer<br>
+      • Rayonnement du soleil<br>
+      • Force du vent<br>
+      • Pétrole<br>
+      • Gaz naturel<br>
+      • Géothermie<br>
+      • Déchets et biomasse<br>
+    </p>
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="def_secondary">
+  <ng-template>
+    <p style="text-align:center; margin:20px;">Par définition,
+      Que sont les sources d’énergies secondaires :
+      <br>Par définition, l'énergie secondaire est celle obtenue grâce à la transformation d'énergie.
+      <br>Contrairement à la source d'énergie primaire, l'énergie secondaire est plus simplement stockable,
+      <br>transportable et utilisable. Les énergies secondaires sont également connues sous le nom de "vecteurs
+      énergétiques".
+    </p>
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="exemple_secondary">
+  <ng-template>
+    <p>
+      Voici la liste des sources d'énergie primaires : <br><br>
+      • Centrale nucléaire<br>
+      • Centrale thermique à flamme (fossile)<br>
+      • Centrale hydraulique<br>
+      • Centrale éolienne<br>
+      • Energie solaire photovoltaïque<br>
+      • Centrale géothermique<br>
+      • Cogénération<br>
+      • Energie solaire thermique à concentration<br>
+    </p>
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="renouvelables">
+  <ng-template>
+    <img src="../../assets/energie/renouvelables.jpg">
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="fossiles">
+  <ng-template>
+    <img src="../../assets/energie/fossiles.png" width="600px" style="margin-top:75px;">
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="def_nucleaire">
+  <ng-template>
+    <p style="text-align:center; margin:20px;">
+      L’énergie nucléaire provient également d’une matière première
+      <br>qu'est l'uranium, c’est donc une énergie fossile. Cependant,
+      <br>on la considère comme une alternative aux autres énergies
+      <br>fossiles car elle est n'émet pas de CO2 même si elle suscite des
+      <br>problèmes de sécurité et de stockage des déchets radioactifs.
+      <br>Si elle a offert une indépendance énergétique à la France depuis
+      <br>un demi-siècle, le coût de la maintenance du parc nucléaire français
+      <br>est aujourd'hui en hausse, du fait de l'allongement de la durée de
+      <br>vie des centrales et du renforcement des normes de sûreté.
+    </p>
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="fonctionnement_nucleaire">
+  <ng-template>
+    <img src="../../assets/energie/fonctionnement%20nucléaire.jpg" width="600px" style="margin-top:75px;">
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="def_hydro">
+  <ng-template>
+    <p style="text-align:center; margin:20px;">
+      Les centrales hydrauliques convertissent la force des cours d’eau,
+      <br>des chutes d’eau et même des marées ou de la houle et constituent
+      <br>une source d’énergie inépuisable en n'émettant pas de CO2.
+      <br>Ce système de production d'électricité verte est la plus ancienne
+      <br>des énergies renouvelables. Tout comme les moulins à eau depuis l'Antiquité,
+      <br>les centrales hydrauliques captent la force de l'eau alimentant les turbines
+      <br>tournantes pour produire de l'électricité grâce à un générateur électrique.
+      <br>Cependant, les conséquences sur le milieu aquatique ou l'environnement
+      <br>en général peuvent être importantes, même si la construction d’un barrage
+      <br>permet par exemple de limiter les inondations.
+    </p>
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="fonctionnement_hydro">
+  <ng-template>
+    <img src="../../assets/energie/fonctionnement_hydro.png" width="600px" style="margin-top:75px;">
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="def_eolien">
+  <ng-template>
+    <p style="text-align:center; margin:20px;">
+      Cette énergie verte est promise à un bel avenir au vu de son caractère inépuisable.
+      <br>Les progrès technologiques réalisés sur les dix dernières années ont permis
+      <br>de rendre les éoliennes à la fois plus efficientes et beaucoup moins coûteuses à produire.
+      <br>Cependant elle présente l'inconvénient majeur d'avoir une production intermittente.
+      <br>Pour assurer la stabilité du réseau de transport d'électricité, la production
+      <br>d'électricité doit toujours égaler à peu près la consommation par les entreprises
+      <br>et les ménages, or on ne peut pas contrôler l'heure à laquelle souffle le vent.
+      <br>Les systèmes de stockage de batterie, qui doivent permettre de contourner ce problème,
+      <br>doivent gagner en efficacité sur les prochaines décennies : c'est à cette
+      <br>condition que les énergies vertes pourront devenir la première forme d'énergie dans le monde.
+      <br>L'implantation d'éoliennes terrestres suscite parfois l'hostilité des riverains car
+      <br>leur présence altère le paysage, génère du bruit et peut présenter un danger pour la
+      <br>faune locale. En France, l'Etat favorise désormais plutôt l'éolien maritime
+      <br>(offshore) et côtier, où les nuisances sont réduites, et où le rendement est souvent bien supérieur.
+    </p>
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="fonctionnement_eolien">
+  <ng-template>
+    <img src="../../assets/energie/fonctionnement-eolienne.png" width="550px" style="margin:20px;">
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="def_solaire">
+  <ng-template>
+    <p style="text-align:center; margin:20px;">
+      L’énergie lumineuse du soleil est recueillie grâce à des capteurs sur des panneaux solaires
+      <br>et est convertie en énergie électrique (photovoltaïque) ou thermique.
+      <br>L’installation de panneaux photovoltaïques peut permettre aux particuliers de
+      <br>subvenir à plus de la moitié de leurs besoins en chauffage (eau et habitation).
+      <br>Tout comme l'énergie éolienne, le solaire photovoltaïque a une production intermittente.
+      <br>Dans le cadre d'une transition énergétique vers les énergies vertes,
+      <br>les Etats devront donc continuer de s'appuyer sur des sources d'énergie complémentaires.
+    </p>
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="fonctionnement_solaire">
+  <ng-template>
+    <img src="../../assets/energie/fonctionnement_solaire.png" width="550px" style="margin:20px; margin-top:100px;">
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="def_geothermie">
+  <ng-template>
+    <p style="text-align:center; margin:20px;">
+      Le principe est d’exploiter le flux géothermique naturel à la surface du globe.
+      <br>En général, ce flux est assez faible et nécessite des dispositifs importants (forage…)
+      <br>pour pouvoir être capté. Cette forme d’énergie ne dépend pas des
+      <br>conditions atmosphériques et a donc l’avantage d’être quasi continue.
+      <br>Les techniques se sont sophistiquées dans les pompes à chaleur géothermiques,
+      <br>qui absorbent la chaleur du sol via un réseau de capteurs, puis la transmettent
+      <br>à des réseaux de chaleur qui la restituent à l'intérieur du logement.
+    </p>
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="fonctionnement_geothermie">
+  <ng-template>
+    <img src="../../assets/energie/fonctionnement_geothermie.jpg" width="550px" style="margin:20px; margin-top:80px;">
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="def_biomasse">
+  <ng-template>
+    <p style="text-align:center; margin:20px;">
+      L’énergie de la biomasse est produite par combustion de matières biologiques
+      <br>comme le bois, par conversion en biocarburants, ou par extraction de
+      <br>biométhane de déchets organiques dans des méthaniseurs.
+      <br>Même si la combustion produit des gaz à effet de serre, la biomasse reste une énergie
+      <br>renouvelable : la croissance des arbres absorbe autant de CO2 que leur combustion
+      <br>n'en libère dans l'atmosphère. Le gaz issu de matières
+      <br>organiques produit par un processus de méthanisation s'appelle le biogaz.
+    </p>
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="fonctionnement_biomasse">
+  <ng-template>
+    <img src="../../assets/energie/fonctionnement_biomasse.jpg" width="550px" style="margin:20px; margin-top:100px;">
+  </ng-template>
+</ion-modal>

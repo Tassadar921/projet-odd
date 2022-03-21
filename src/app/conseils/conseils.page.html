@@ -1,0 +1,100 @@
+<app-menu></app-menu>
+
+<ion-content>
+  <ion-grid>
+    <ion-list>
+      <ion-list-header>
+        <ion-title style="text-align:center;">
+          Cliquez sur un thème pour voir les tips !
+        </ion-title>
+      </ion-list-header>
+      <ion-row>
+        <ion-item button="true" id="pieces" color="light" style="width:400px;">
+          <ion-icon name="home" color="secondary"></ion-icon>
+          <ion-col>
+            Tips concernant toutes pièces de la maison
+          </ion-col>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-item button="true" id="chambre" color="light" style="width:400px;">
+          <ion-icon name="bed" color="secondary"></ion-icon>
+          <ion-col>
+            Conseils pour ma chambre
+          </ion-col>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-item button="true" id="cuisine" color="light" style="width:400px;">
+          <ion-icon name="restaurant" color="secondary"></ion-icon>
+          <ion-col>
+            Que faire en cuisine ?
+          </ion-col>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-item button="true" id="salle de bain" color="light" style="width:400px;">
+          <ion-icon name="water" color="secondary"></ion-icon>
+          <ion-col>
+            (Quelques) tips pour la salle de bain !
+          </ion-col>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-item button="true" id="salon" color="light" style="width:400px;">
+          <ion-icon name="tv" color="secondary"></ion-icon>
+          <ion-col>
+            Et dans le salon alors ?
+          </ion-col>
+        </ion-item>
+      </ion-row>
+      <ion-row>
+        <ion-col></ion-col>
+        <ion-item button="true" id="buanderie" color="light" style="width:400px;">
+          <ion-icon name="timer" color="secondary"></ion-icon>
+          <ion-col>
+            Je peux faire quelque chose dans ma buanderie ?
+          </ion-col>
+        </ion-item>
+      </ion-row>
+    </ion-list>
+  </ion-grid>
+</ion-content>
+
+<ion-modal trigger="pieces">
+  <ng-template>
+    <img src="../../assets/tips/pièces.PNG" width="300px;" style="margin-left:150px">
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="chambre">
+  <ng-template>
+    <img src="../../assets/tips/chambre.PNG" width="500px;" style="margin-left:50px; margin-top:80px;">
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="cuisine">
+  <ng-template>
+    <img src="../../assets/tips/cuisine.PNG" width="500px;" style="margin-left:50px; margin-top:80px;">
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="salle de bain">
+  <ng-template>
+    <img src="../../assets/tips/salle de bain.PNG" width="500px;" style="margin-left:50px; margin-top:40px;">
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="salon">
+  <ng-template>
+    <img src="../../assets/tips/salon.PNG" width="500px;" style="margin-left:50px; margin-top:50px;">
+  </ng-template>
+</ion-modal>
+
+<ion-modal trigger="buanderie">
+  <ng-template style="width:1000px;">
+    <img src="../../assets/tips/buanderie.PNG" width="700px;" style="margin-top:100px;">
+  </ng-template>
+</ion-modal>
