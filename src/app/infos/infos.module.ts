@@ -8,8 +8,6 @@ import { InfosPageRoutingModule } from './infos-routing.module';
 
 import { InfosPage } from './infos.page';
 
-import {MenuComponent} from '../components/menu/menu.component';
-
 @NgModule({
   imports: [
     CommonModule,
@@ -17,6 +15,6 @@ import {MenuComponent} from '../components/menu/menu.component';
     IonicModule,
     InfosPageRoutingModule
   ],
-  declarations: [InfosPage, MenuComponent]
+  declarations: [InfosPage]
 })
 export class InfosPageModule {}

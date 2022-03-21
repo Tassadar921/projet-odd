@@ -8,8 +8,6 @@ import { ConseilsPageRoutingModule } from './conseils-routing.module';
 
 import { ConseilsPage } from './conseils.page';
 
-import {MenuComponent} from '../components/menu/menu.component';
-
 @NgModule({
   imports: [
     CommonModule,
@@ -17,6 +15,6 @@ import {MenuComponent} from '../components/menu/menu.component';
     IonicModule,
     ConseilsPageRoutingModule
   ],
-  declarations: [ConseilsPage, MenuComponent]
+  declarations: [ConseilsPage]
 })
 export class ConseilsPageModule {}

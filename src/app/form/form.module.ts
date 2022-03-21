@@ -8,8 +8,6 @@ import { FormPageRoutingModule } from './form-routing.module';
 
 import { FormPage } from './form.page';
 
-import {MenuComponent} from '../components/menu/menu.component';
-
 @NgModule({
   imports: [
     CommonModule,
@@ -17,6 +15,6 @@ import {MenuComponent} from '../components/menu/menu.component';
     IonicModule,
     FormPageRoutingModule
   ],
-  declarations: [FormPage, MenuComponent]
+  declarations: [FormPage]
 })
 export class FormPageModule {}

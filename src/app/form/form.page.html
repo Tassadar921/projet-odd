@@ -1,4 +1,68 @@
-<app-menu></app-menu>
+<ion-row>
+  <ion-col>
+    <ion-header>
+      <ion-menu-button color="white"></ion-menu-button>
+    </ion-header>
+  </ion-col>
+</ion-row>
+
+<!-- /////////////////////// MENU CONTENT /////////////////////// -->
+
+<ion-menu side="start" menuId="custom" contentId="main">
+  <ion-header>
+    <ion-toolbar color="light">
+      <ion-title>Naviguer</ion-title>
+      <ion-note slot="end" style="margin-right:10px;">
+        {{hour}}
+      </ion-note>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item button="true" (click)="redirect('home')">
+        <ion-icon color="secondary" class="start" name="home"></ion-icon>
+        <ion-label>Accueil</ion-label>
+        <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-list-header color="light">
+        <ion-icon color="secondary" class="start" name="home"></ion-icon>
+        <strong>A notre échelle</strong>
+      </ion-list-header>
+      <ion-item button="true" (click)="redirect('conseils')">
+        <ion-icon color="secondary" class="start" name="man"></ion-icon>
+        <ion-label>Ce que je peux faire</ion-label>
+        <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-list-header color="light">
+        <ion-icon color="secondary" class="start" name="globe"></ion-icon>
+        <strong>Plus largement</strong>
+      </ion-list-header>
+      <ion-item button="true" (click)="redirect('infos')">
+        <ion-icon color="secondary" class="start" name="flash"></ion-icon>
+        <ion-label>Sources d'énergie</ion-label>
+        <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-list-header color="light">
+        <ion-icon color="secondary" class="start" name="trophy"></ion-icon>
+        <strong>Formulaire</strong>
+      </ion-list-header>
+      <ion-item button="true" (click)="redirect('form')">
+        <ion-icon color="secondary" class="start" name="pencil"></ion-icon>
+        <ion-label>Aller le remplir</ion-label>
+        <ion-icon color="secondary" name="chevron-forward" slot="end"></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-router-outlet id="main"></ion-router-outlet>
+
 
 <ion-progress-bar slot="fixed" type="indeterminate" *ngIf="submitting"></ion-progress-bar>
 <ion-progress-bar slot="fixed" *ngIf="!submitting"></ion-progress-bar>
